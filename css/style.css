@@ -1,0 +1,510 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Acme', sans-serif;
+    font-size: 28px;    
+    min-height: 100vh;    
+    width: 100%;
+}
+
+main{    
+    width: 100%;
+    min-height: 100vh;   /*<----------Esto es para que se adapte a toda la pantalla de los dispositivos tanto mobile como desktop*/
+    box-sizing: border-box;
+    background: #E9ECF8;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /*border-style: solid;*/
+    /*border-width: thick;*/
+    /*border-color: blue;*/
+}
+
+.logo{
+    width: 20%;
+    min-height: 10vh; /*<---------------------*/
+    padding-top: 2%;
+    padding-left: 2%;
+    /*margin: 1% 0% 2% 0%;*/ 
+}
+
+
+
+.display{
+    width: 80%; /*<---------puede ser 100%*/
+    min-height: 90vh;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*------------------------------------Panel de Botones Inicial-------------------- */
+.panel-de-botones-inicial{
+    display: flex;
+    /*display: flex;*/                           /*<-------------------*/      
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 219px;
+}
+
+
+.boton-azul{
+    font-family: 'Acme', sans-serif;
+    font-size: 28px;    
+    background: #0A3871;
+    border-radius: 24px;/*<------------*/
+    height: 67px;
+    width: 332px;  
+    /*texto*/
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    /*border: 0.01rem solid #0A3871;
+    border-radius: 1.5rem;
+    background: #0A3871;   */
+}
+
+.boton-azul:hover {
+    /*transform: scale(1.15);*/
+    font-size: 33px;
+    
+}
+
+
+.boton-claro{
+    font-family: 'Acme', sans-serif;
+    font-size: 28px;    
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    height: 67px;
+    width: 332px;  
+     /*TEXTO*/    
+     font-style: normal;
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 19px;
+     text-align: center;
+     color: #0A3871;
+     margin-left: 41px;
+    /*border: 0.01rem solid #0A3871;
+    border-radius: 1.5rem;*/
+    background: #E9ECF8;  
+}
+
+.boton-claro:hover {
+    /*transform: scale(1.15);*/
+    font-size: 33px;
+    
+}
+
+#btnIniciar{
+    width: 317px;
+    height: 114px;
+    padding: 24px;   
+    font-style: normal;
+    font-weight: 400;    
+    line-height: 22px;
+    /*display: flex;*/
+    /*align-items: center;*/
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+
+
+#btnAgregar{
+    width: 280px;
+    height: 67px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+    margin-left: initial;
+}
+
+#btnAgregar:hover {
+    /*transform: scale(1.15);*/
+    font-size: 25px;
+    
+}
+
+
+/*------------------------------------form Agregar-------------------- */
+.form-agregar{    
+    display: none;
+    /*display: flex;*/                         /*<-------------------*/    
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    /*margin: 5% 0% 2% 0%;*/
+    /*padding-top: 58px;*/
+    width: 100%;
+    min-height: 88vh;
+}
+
+.flex-container-input{
+    display: flex;
+    justify-content: center;
+   
+}
+
+#input{
+    width: 705px;
+    height: 50vh;
+    resize: none;
+    border: none;
+    overflow: auto;
+    border-color: transparent;
+    background: transparent;
+    outline: 0 none;
+    font-family: 'Acme', sans-serif;
+    font-size: 28px;
+    
+   
+}
+
+.flex-container-advertencia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advertencia{ 
+        
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 705px;
+    
+    
+}
+
+.advertencia img{
+    margin-right: 10px
+}
+
+.advertencia p{
+    
+    box-sizing: border-box;    
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #495057;
+    opacity: 0.8;   
+       
+}
+
+
+.panel-de-botones-agregar{
+   
+    vertical-align: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+
+
+
+
+#btnGuardar:hover {
+    /*transform: scale(1.15);*/
+    font-size: 28px;
+    
+}
+
+
+
+
+
+
+#btnCancelar:hover {
+    /*transform: scale(1.15);*/
+    font-size: 28px;
+    
+}
+
+/*------------------------------------Juego-------------------- */
+
+.juego{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    min-height: 88vh;
+    justify-content: space-evenly; /*<----¿mismo resultado con space-between?*/
+}
+
+
+.dibujo{
+    align-self: center;
+    margin-top: auto; /*<----se nota en el responsive*/
+}
+
+.juego-imagen{
+    max-width: 100%;
+    max-height: 100%;
+    display: none;
+}
+
+
+.display-letras-acertadas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: auto; /*<----se nota en el responsive*/
+}
+
+.arrayInput{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    min-height: 28px;
+}
+
+.letra-correcta{
+    min-height: 28px;
+}
+
+.display-letras-fallidas {
+    align-self: center;
+    margin-bottom: auto; /*<----se nota en el responsive*/   
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.letra-incorrecta{
+    margin-right: 10px;
+    color: red;
+    font-size: 20px;
+}
+
+
+.panel-de-botones-juego{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+#btnNuevoJuego:hover{
+    font-size: 28px;
+}
+
+#btnDesistir:hover{
+    font-size: 28px;
+}
+
+/*--------------footer--------------------*/
+
+footer{
+    width: 100%;
+    height: auto;
+    min-height: 30vh;
+    background: url(../imagenes/bg.jpg); 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.footer-flex-container{   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*height: 100%;*/
+    height: auto;
+    min-height: 30vh;
+}
+
+.copyright{
+    font-size: 15px;
+}
+
+
+.visible{
+    display: flex;
+}
+
+.visible-initial{
+    display: initial;
+}
+
+.missin-letter{
+    color: green;
+}
+/*-------------------------------------------------------------------------------*/
+@media screen and (max-width: 465px) {
+    .display-letras-acertadas{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 650px) {
+
+    #btnIniciar {
+        font-size: 16px;
+        width: 220px;
+        border-radius: 16px;
+
+    }
+
+    #btnAgregar {
+        font-size: 16px;
+        width: 190px;
+        border-radius: 16px;
+    }
+
+    #btnIniciar:hover,
+    #btnAgregar:hover {
+        font-size: 20px;
+    }
+
+    .advertencia {
+        width: 90%;
+    }
+
+    .panel-de-botones-agregar {
+        flex-direction: column;
+    }
+
+    #btnGuardar {
+        border-radius: 16px;
+        width: 90%;
+        margin-left: 0;
+        font-size: 16px;
+    }
+
+    #btnCancelar {
+        border-radius: 16px;
+        width: 90%;
+        margin-left: 0;
+        font-size: 16px;
+        margin-top: 25px;
+    }
+
+    #btnGuardar:hover,
+    #btnCancelar:hover {
+        /*transform: scale(1.15);*/
+        font-size: 20px;
+    }
+
+    .panel-de-botones-juego {
+        flex-direction: column;
+    }
+
+    #btnNuevoJuego {
+        border-radius: 16px;
+        width: 90%;
+        margin-left: 0;
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 25px;
+    }
+
+    #btnDesistir {
+        border-radius: 16px;
+        width: 90%;
+        margin-left: 0;
+        font-size: 16px;
+    }
+
+    #btnNuevoJuego:hover,
+    #btnDesistir:hover {
+        font-size: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 300px) {
+
+    #btnIniciar {
+        font-size: 10px;
+        width: 160px;
+        border-radius: 10px;
+
+    }
+
+    #btnAgregar {
+        font-size: 10px;
+        width: 140px;
+        border-radius: 10px;
+    }
+
+    #btnIniciar:hover,
+    #btnAgregar:hover {
+        font-size: 15px;
+    }
+
+    .panel-de-botones-agregar {
+        flex-direction: column;
+    }
+
+    #btnGuardar {
+        border-radius: 10px;
+        width: 200px;
+        margin-left: 0;
+        font-size: 10px;
+    }
+
+    #btnCancelar {
+        border-radius: 10px;
+        width: 200px;
+        margin-left: 0;
+        font-size: 10px;
+        margin-top: 25px;
+    }
+
+    #btnGuardar:hover,
+    #btnCancelar:hover {
+        /*transform: scale(1.15);*/
+        font-size: 15px;
+    }
+
+    .panel-de-botones-juego {
+        flex-direction: column;
+    }
+
+    #btnNuevoJuego {
+        border-radius: 10px;
+        width: 200px;
+        margin-left: 0;
+        font-size: 10px;
+        margin-top: 5px;
+        margin-bottom: 25px;
+    }
+
+    #btnDesistir {
+        border-radius: 10px;
+        width: 200px;
+        margin-left: 0;
+        font-size: 10px;
+    }
+
+    #btnNuevoJuego:hover,
+    #btnDesistir:hover {
+        font-size: 15px;
+    }
+
+
+
+}

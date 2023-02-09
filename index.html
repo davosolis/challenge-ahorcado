@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <title>Juego del Ahorcado</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Acme&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <h1 class="logo"><img src="imagenes/Logo1x.png" alt="Logo de Alura"></h1>
+            <section class="display">  <!--  display  -->
+                <div class="panel-de-botones-inicial">  <!--  1 panel-inicial -->
+                   <button class="boton-azul" id="btnIniciar">Iniciar Juego</button>
+                   <button class="boton-claro" id="btnAgregar">Agregar nueva palabra</button>
+                </div>  <!--  1 panel-inicial-end -->
+
+                <form class="form-agregar">   <!--  2 agregar -->
+                    <div class="flex-container-input">
+                        <textarea id="input" maxlength="8" placeholder="Ingrese una palabra"></textarea>
+                    </div>                    
+                    <div class="flex-container-advertencia">
+                        <div class="advertencia">
+                            <img src="imagenes/bi_exclamation-circle-fill.png" alt="imagen de exclamación">
+                            <P>Máximo de 8 letras</P>
+                        </div>
+                    </div>                    
+                    <div class="panel-de-botones-agregar">
+                        <button class="boton-azul" id="btnGuardar">Guardar y empezar</button>
+                        <button class="boton-claro" id="btnCancelar">Cancelar</button>
+                    </div>
+                </form>   <!--  2 agregar-end -->
+                
+                <section class="juego"> <!--  3 juego -->
+                    <div class="dibujo">
+                        <img class="juego-imagen" src="imagenes/dibujo1.png" alt="dibujo">
+                        <img class="juego-imagen" src="imagenes/dibujo2.png" alt="dibujo">
+                        <img class="juego-imagen" src="imagenes/dibujo3.png" alt="dibujo">
+                        <img class="juego-imagen" src="imagenes/dibujo4.png" alt="dibujo">
+                        <img class="juego-imagen" src="imagenes/dibujo5.png" alt="dibujo">
+                        <img class="juego-imagen" src="imagenes/dibujo6.png" alt="dibujo">
+                        <img class="juego-imagen" src="imagenes/dibujo7.png" alt="dibujo">
+                        <img class="juego-imagen" src="imagenes/dibujo8.png" alt="dibujo">
+                        <img class="juego-imagen" src="imagenes/dibujo9.png" alt="dibujo">
+                        <img class="juego-imagen" src="imagenes/gameover.png" alt="dibujo">
+                        <img class="juego-imagen" src="imagenes/juegoGanado.png" alt="dibujo">
+                    </div>                    
+                    <div class="display-letras-acertadas">
+                        <div class="arrayInput"><span class="letra-correcta"></span><img src="imagenes/linea.svg" alt="linea"></div>
+                        <div class="arrayInput"><span class="letra-correcta"></span><img src="imagenes/linea.svg" alt="linea"></div>
+                        <div class="arrayInput"><span class="letra-correcta"></span><img src="imagenes/linea.svg" alt="linea"></div>
+                        <div class="arrayInput"><span class="letra-correcta"></span><img src="imagenes/linea.svg" alt="linea"></div>
+                        <div class="arrayInput"><span class="letra-correcta"></span><img src="imagenes/linea.svg" alt="linea"></div>
+                        <div class="arrayInput"><span class="letra-correcta"></span><img src="imagenes/linea.svg" alt="linea"></div>
+                        <div class="arrayInput"><span class="letra-correcta"></span><img src="imagenes/linea.svg" alt="linea"></div>
+                        <div class="arrayInput"><span class="letra-correcta"></span><img src="imagenes/linea.svg" alt="linea"></div>                                        
+                    </div>
+                    <div class="display-letras-fallidas">                        
+                    </div>                        
+                    <div class="panel-de-botones-juego">
+                        <button class="boton-azul" id="btnNuevoJuego">Nuevo Juego</button>
+                        <button class="boton-claro" id="btnDesistir">Desistir</button>
+                    </div>
+                </section>   <!-- 3 juego-end  -->
+            </section>  <!--  diplay-end  -->
+        </main>
+        <footer>
+            <div class="footer-flex-container">
+                <h2>Social Media</h2>
+                <div class="container-social-media">
+                    <a class="social-media-links" href="http://"><img src="imagenes/github.png" alt="link to Github"></a>       
+                    <a class="social-media-links" href="http://"><img src="imagenes/linkedin.png" alt="link to linkedin"></a>
+                    <a class="social-media-links" href="http://"><img src="imagenes/twitter.png" alt="link to twitter"></a>
+                </div>        
+                <p class="copyright">&copy Copyright 2022</p>
+            </div>       
+        </footer>   
+        <script src="js/funciones.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
+
